@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vidéo HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titre de la Vidéo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1efef;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .titre-container {
+      background-color: #3bf3cb;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .titre {
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-size: 32px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Ratio 16:9 */
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .realise {
+      text-align: center;
+      color: #000000;
+    }
+  </style>
 </head>
 <body>
-    <h1>Ma video</h1>
-    <video width="100%" height="100%" controls>
-        <source src="video.mp4"/>
-        Votre navigateur ne supporte pas la lecture de vidéos.
-    </video>
+  <div class="container">
+    <div class="titre-container">
+      <h1 class="titre">Smart Bulbs</h1>
+    </div>
+    <div class="video-container">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="realise">Video made by bouriche Lotfi and Oussama zergaoui oussama</p>
+  </div>
 </body>
 </html>
